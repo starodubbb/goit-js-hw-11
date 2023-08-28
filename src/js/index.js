@@ -26,6 +26,7 @@ async function submitSearchHandler(e) {
   const formRef = e.currentTarget;
 
   galleryClear();
+  hideElement(refs.loadMoreBtn);
   pictureApiService.resetPage();
 
   const topic = formRef.elements.searchQuery.value;

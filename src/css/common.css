@@ -36,13 +36,16 @@ button.is-hidden {
 }
 
 .search-form {
+  position: fixed;
   display: flex;
   justify-content: center;
   gap: 10px;
+  width: 100%;
+  height: 60px;
   padding-top: 10px;
   padding-bottom: 10px;
 
-  background-color: #2a2a2a41;
+  background-color: #0010c5;
 }
 .search-input {
   width: 200px;
@@ -54,7 +57,7 @@ button.is-hidden {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 80px;
   padding-bottom: 20px;
   width: 1400px;
   gap: 20px;

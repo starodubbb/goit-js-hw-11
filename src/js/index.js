@@ -29,7 +29,7 @@ async function submitSearchHandler(e) {
   hideElement(refs.loadMoreBtn);
   pictureApiService.resetPage();
 
-  const topic = formRef.elements.searchQuery.value;
+  const topic = formRef.elements.searchQuery.value.trim();
   if (topic === '') {
     showNotification('failure', 'Please enter something');
     return;
